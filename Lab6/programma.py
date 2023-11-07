@@ -41,7 +41,7 @@ def voer_ping_uit(server_naam, server_adres):
 # Functie om rapporten te genereren
 def genereer_rapport(server_lijst):
     template_env = Environment(loader=FileSystemLoader('.'))
-    template = template_env.get_template('basis.html')
+    template = template_env.get_template('rapport_template.html')
     rapport_data = []
 
     for naam, adres in server_lijst.items():
