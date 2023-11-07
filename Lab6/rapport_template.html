@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Serverrapport</title>
+</head>
+<body>
+    <h1>Serverstatusrapport</h1>
+    <table>
+        <tr>
+            <th>Servernaam</th>
+            <th>Serveradres</th>
+            <th>Ping Resultaat</th>
+        </tr>
+        {% for item in rapport_data %}
+        <tr>
+            <td>{{ item.naam }}</td>
+            <td>{{ item.adres }}</td>
+            <td>{{ item.ping_resultaat }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+</body>
+</html>
